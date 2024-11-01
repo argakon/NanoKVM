@@ -8,9 +8,10 @@ import * as ls from '@/lib/localstorage';
 import { resolutionAtom } from '@/jotai/screen.ts';
 
 import { Fps } from './fps';
-import { FrameDetect } from './frame-detect';
+//import { FrameDetect } from './frame-detect';
 import { Quality } from './quality';
 import { Resolution } from './resolution';
+import { AudioToggle } from './audio-toggle';
 
 export const Screen = () => {
   const resolution = useAtomValue(resolutionAtom);
@@ -46,7 +47,7 @@ export const Screen = () => {
           <Resolution />
           <Fps fps={fps} setFps={setFps} />
           <Quality quality={quality} setQuality={setQuality} />
-          <FrameDetect />
+          <AudioToggle />
         </div>
       }
       placement="bottomLeft"

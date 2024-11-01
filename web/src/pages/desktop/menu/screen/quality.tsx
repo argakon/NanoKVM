@@ -11,7 +11,11 @@ const qualityList = [
   { key: 80, label: '80%' },
   { key: 70, label: '70%' },
   { key: 60, label: '60%' },
-  { key: 51, label: '50%' }
+  { key: 51, label: '50%' },
+  { key: 40, label: '40%' },
+  { key: 30, label: '30%' },
+  { key: 20, label: '20%' },
+  { key: 10, label: '10%' }
 ];
 
 type QualityProps = {

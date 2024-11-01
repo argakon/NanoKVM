@@ -14,3 +14,7 @@ export function updateFrameDetect() {
 export function stopFrameDetect() {
   return http.post('/api/stream/mjpeg/detect/stop');
 }
+
+export function webRTCOffer(offer: RTCSessionDescription | null) {
+  return http.post('/api/stream/webrtc', offer)
+}
